@@ -7,6 +7,8 @@
     var i = 2;
     var on = true;
 
+    console.log("HIIII");
+
 function checkPageOpen(){
 
     if (document.hasFocus()){
@@ -39,7 +41,7 @@ function randomDo(){
 
         var light_count = document.getElementsByClassName("unit-item unit-item-light")[0].innerText*1;
 
-       on = checkPageOpen();
+         on = checkPageOpen();
 
         console.log(light_count);
         var plunder_list ='';
