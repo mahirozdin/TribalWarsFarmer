@@ -55,7 +55,7 @@ function randomDo(){
 
         var light_count = document.getElementsByClassName("unit-item unit-item-light")[0].innerText*1;
 
-         on = checkPageOpen();
+
 
         console.log(light_count);
         var plunder_list ='';
@@ -116,6 +116,8 @@ function randomDo(){
 
 
 setInterval(function (){
+    on = checkPageOpen();
+
     if(on){
         randomDo();
     }else{
