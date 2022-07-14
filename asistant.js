@@ -2,30 +2,34 @@
 (function() {
     'use strict';
 
-var manager = "";
 
+    var row_length = 0;
+    var i = 2;
+    var on = true;
 
+function checkPageOpen(){
 
+    if (document.hasFocus()){
+        document.title = 'FARMING';
+        return true;
 
-var row_length = 0;
-var i = 2;
-var on = true;
-$(window).blur(function(){
-    on = false;
-    console.log("STOP BOT");
-    document.title = 'BOT STOPPED OPEN PAGE';
-});
-$(window).focus(function(){
-    on=true;
-    console.log("continue BOT");
-    document.title = 'FARMING';
-});
-
-
-
-function randomIntFromInterval(min, max) { // min and max included
-    return Math.floor(Math.random() * (max - min + 1) + min)
+    }else{
+        document.title = 'BOT STOPPED OPEN PAGE';
+        return false;
+    }
 }
+function randomIntFromInterval(min, max) { // min and max included
+        return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+
+
+
+
+
+
+
+
 function randomDo(){
 
 
@@ -34,6 +38,8 @@ function randomDo(){
     setTimeout(function (){
 
         var light_count = document.getElementsByClassName("unit-item unit-item-light")[0].innerText*1;
+
+       on = checkPageOpen();
 
         console.log(light_count);
         var plunder_list ='';
