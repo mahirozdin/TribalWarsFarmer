@@ -117,7 +117,7 @@ function randomDo(){
 
 setInterval(function (){
     on = checkPageOpen();
-
+console.log('checked.000');
     if(on){
         randomDo();
     }else{
