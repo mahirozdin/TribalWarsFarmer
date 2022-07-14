@@ -26,11 +26,11 @@
 function checkPageOpen(){
 
     if (document.hasFocus()){
-        document.title = 'FARMING';
+        // document.title = 'FARMING';
         return true;
 
     }else{
-        document.title = 'BOT STOPPED OPEN PAGE';
+     alert('Stopped. Open Page. Riskyy!')
         return false;
     }
 }
