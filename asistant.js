@@ -1,5 +1,5 @@
 
-
+(function() {
 var manager = "";
 
 
@@ -124,7 +124,7 @@ function checkExistOrnot(str1,str2)
 }
 
 
-
+}.call(this));
 
 
 
