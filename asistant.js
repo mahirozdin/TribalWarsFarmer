@@ -1,3 +1,17 @@
+// ==UserScript==
+// @name          Mahir Farmer
+// @namespace     https://github.com/sindresorhus/cssprettifier-userscript
+// @version       0.9.1
+// @description   One click farm helper for Tribal Wars.
+// @author        mto
+// @require       https://github.com/thevtm/Tribal-Wars-Farm-Assistant-Plus/raw/master/build/TribalWarsFAP.user.js
+// @match         *://*.tribalwars.com.br/game.php?*screen=am_farm*
+// @downloadURL   https://github.com/thevtm/Tribal-Wars-Farm-Assistant-Plus/raw/master/build/TribalWarsFAP.user.js
+// @grant         GM_getValue
+// @grant         GM_setValue
+// @grant         GM_addStyle
+// @grant         none
+// ==/UserScript==
 
 (function() {
     'use strict';
