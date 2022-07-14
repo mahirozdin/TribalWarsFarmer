@@ -1,6 +1,6 @@
 
 
-var manager = "
+var manager = "";
 
 
 
